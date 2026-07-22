@@ -1,0 +1,228 @@
+.hobbies{
+
+    width:90%;
+    margin:140px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.section-title span{
+
+    color:var(--mint-leaf-2);
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.section-title h2{
+
+    margin:18px 0;
+
+    font-size:48px;
+
+    color:var(--evergreen);
+
+}
+
+.section-title p{
+
+    color:var(--dark-emerald);
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.hobby-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.hobby-card{
+
+    padding:35px;
+
+    border-radius:24px;
+
+    background:white;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(8,28,21,.05);
+
+}
+
+.hobby-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(8,28,21,.12);
+
+}
+
+.hobby-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    background:var(--celadon);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.hobby-card h3{
+
+    margin-bottom:12px;
+
+    color:var(--pine-teal);
+
+    font-size:22px;
+
+}
+
+.hobby-card p{
+
+    color:var(--sea-green);
+
+    line-height:1.7;
+
+}
+
+.advantages{
+
+    margin-top:90px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+}
+
+.adv-card{
+
+    display:flex;
+
+    gap:22px;
+
+    align-items:flex-start;
+
+    padding:28px;
+
+    background:var(--frosted-mint);
+
+    border-radius:22px;
+
+    transition:.3s;
+
+}
+
+.adv-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.adv-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+}
+
+.adv-card h3{
+
+    margin-bottom:10px;
+
+    color:var(--pine-teal);
+
+}
+
+.adv-card p{
+
+    color:var(--dark-emerald);
+
+    line-height:1.7;
+
+}
+
+@media(max-width:1000px){
+
+.hobby-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.advantages{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.hobby-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:36px;
+
+}
+
+}

@@ -1,0 +1,339 @@
+.floating-area {
+
+    position: relative;
+
+    width: 420px;
+
+    height: 500px;
+
+}
+
+
+
+/* головна картка */
+
+.profile-card {
+
+    position: absolute;
+
+    top: 50px;
+
+    left: 60px;
+
+
+    width: 300px;
+
+
+    background: rgba(255,255,255,0.65);
+
+    backdrop-filter: blur(20px);
+
+
+    border-radius: 35px;
+
+
+    padding: 15px;
+
+
+    box-shadow:
+    0 30px 70px rgba(27,67,50,0.18);
+
+
+    animation: levitate 5s ease-in-out infinite;
+
+}
+
+
+
+.profile-card img {
+
+
+    width:100%;
+
+    height:300px;
+
+
+    object-fit:cover;
+
+
+    border-radius:25px;
+
+}
+
+
+
+
+.profile-info {
+
+    padding:15px 10px;
+
+}
+
+
+
+.profile-info h3 {
+
+    color:var(--pine-teal);
+
+    font-size:20px;
+
+}
+
+
+.profile-info p {
+
+    color:var(--sea-green);
+
+    font-size:14px;
+
+}
+
+
+
+.match {
+
+
+    margin-top:12px;
+
+
+    display:inline-block;
+
+
+    padding:8px 16px;
+
+
+    border-radius:30px;
+
+
+    background:var(--celadon);
+
+
+    color:var(--dark-emerald);
+
+
+    font-size:13px;
+
+}
+
+
+
+/* маленькі плаваючі елементи */
+
+
+.floating-item {
+
+
+    position:absolute;
+
+
+    width:60px;
+
+    height:60px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    font-size:28px;
+
+
+    box-shadow:
+    0 15px 35px rgba(27,67,50,0.15);
+
+
+}
+
+
+
+.item-one {
+
+    top:40px;
+
+    left:10px;
+
+
+    animation: float1 4s infinite;
+
+}
+
+
+
+.item-two {
+
+    top:160px;
+
+    right:20px;
+
+
+    animation: float2 5s infinite;
+
+}
+
+
+
+.item-three {
+
+    bottom:100px;
+
+    left:20px;
+
+
+    animation: float1 6s infinite;
+
+}
+
+
+
+.item-four {
+    /* z-index: ; */
+
+    bottom:40px;
+
+    right:50px;
+
+
+    animation: float2 4s infinite;
+
+}
+
+
+
+/* маленька нижня картка */
+
+
+.small-card {
+
+    z-index: 20;
+    position:absolute;
+
+
+    bottom:30px;
+
+    right:-20px;
+
+
+    display:flex;
+
+
+    gap:12px;
+
+
+    align-items:center;
+
+
+    padding:15px 20px;
+
+
+    background:white;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0 20px 40px rgba(27,67,50,.15);
+
+
+}
+
+
+
+.small-card span {
+    /* z-index:; */
+    font-size:25px;
+
+}
+
+
+
+.small-card strong {
+
+    color:var(--pine-teal);
+
+    font-size:14px;
+
+}
+
+
+.small-card p {
+
+    margin:0;
+
+    font-size:12px;
+
+    color:var(--sea-green);
+
+}
+
+
+
+/* анімації */
+
+
+@keyframes levitate {
+
+
+    0%,100% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+
+
+@keyframes float1 {
+
+
+    0%,100% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+
+
+@keyframes float2 {
+
+
+    0%,100% {
+
+        transform:translateY(0) rotate(0deg);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-20px) rotate(8deg);
+
+    }
+
+}

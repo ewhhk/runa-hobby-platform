@@ -1,0 +1,132 @@
+.stats {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+
+    margin-top: 55px;
+
+}
+
+
+/* одна статистика */
+
+.stat-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+/* цифри */
+
+.stat-card h3 {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    color: var(--pine-teal);
+
+    line-height: 1;
+
+}
+
+
+/* текст під цифрою */
+
+.stat-card p {
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    color: var(--sea-green);
+
+    letter-spacing: 0.3px;
+
+}
+
+
+/* маленький акцент */
+
+.stat-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: -12px;
+
+    width: 35px;
+
+    height: 3px;
+
+    border-radius: 20px;
+
+    background: var(--mint-leaf-2);
+
+}
+
+
+/* hover ефект */
+
+.stat-card:hover h3 {
+
+    color: var(--sea-green);
+
+    transform: translateY(-3px);
+
+}
+
+
+.stat-card h3 {
+
+    transition: .3s ease;
+
+}
+
+
+/* адаптив */
+
+@media(max-width:700px){
+
+    .stats {
+
+        justify-content: center;
+
+        gap: 30px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .stat-card {
+
+        text-align: center;
+
+    }
+
+
+    .stat-card::before {
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+    }
+
+}

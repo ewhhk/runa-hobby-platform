@@ -1,0 +1,125 @@
+.header {
+
+  width: 99%;
+  left: 0.5%;
+  border-radius: 14px;
+
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 8%;
+
+  background: var(--frosted-mint);
+
+  border-bottom: 1px solid rgba(27,67,50,0.12);
+
+  position: sticky;
+  top: 1%;
+
+  z-index: 100;
+
+}
+
+
+/* Логотип */
+
+.logo {
+    display: flex;
+    width: 100px;
+    /* align-content: center; */
+}
+
+.logo img{
+    width: 100px;
+
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+
+/* Меню */
+
+nav {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 35px;
+
+}
+
+
+nav a {
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: var(--dark-emerald);
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.3px;
+
+  transition: .25s ease;
+
+}
+
+
+nav a:hover {
+
+  color: var(--mint-leaf-2);
+
+}
+
+
+/* маленька анімація */
+
+nav a::after {
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-7px;
+
+  left:50%;
+
+  width:0;
+
+  height:1px;
+
+  background:var(--mint-leaf-2);
+
+  transform:translateX(-50%);
+
+  transition:.3s;
+
+}
+
+
+nav a:hover::after {
+
+  width:100%;
+
+}
+
+
+/* пустий блок справа для балансу */
+
+.header::after {
+
+  content:"";
+
+  flex:1;
+
+}

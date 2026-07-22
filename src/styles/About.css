@@ -1,0 +1,194 @@
+.about{
+
+    width:90%;
+    margin:120px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+}
+
+.about-left{
+
+    flex:1;
+}
+
+.section-label{
+
+    font-size:13px;
+    letter-spacing:2px;
+    color:var(--mint-leaf-2);
+    font-weight:600;
+}
+
+.about h2{
+
+    margin:18px 0;
+
+    font-size:52px;
+    line-height:1.15;
+
+    color:var(--evergreen);
+}
+
+.about h2 span{
+
+    color:var(--sea-green);
+}
+
+.about p{
+
+    font-size:17px;
+    line-height:1.8;
+
+    color:var(--dark-emerald);
+
+    max-width:600px;
+}
+
+.about-features{
+
+    margin-top:45px;
+
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.feature{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.feature-icon{
+
+    width:58px;
+    height:58px;
+
+    border-radius:18px;
+
+    background:var(--celadon);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:26px;
+}
+
+.feature h4{
+
+    margin-bottom:6px;
+
+    color:var(--pine-teal);
+
+    font-size:18px;
+}
+
+.feature p{
+
+    font-size:15px;
+}
+
+.about-right{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+}
+
+.about-card{
+
+    width:360px;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:white;
+
+    box-shadow:0 30px 70px rgba(8,28,21,.08);
+
+    animation:float 5s ease-in-out infinite;
+}
+
+.quote{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:var(--pine-teal);
+
+    line-height:1.4;
+}
+
+.progress{
+
+    margin:35px 0;
+}
+
+.progress-info{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    color:var(--dark-emerald);
+}
+
+.progress-bar{
+
+    height:10px;
+
+    background:var(--celadon);
+
+    border-radius:30px;
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    width:94%;
+    height:100%;
+
+    background:var(--mint-leaf-2);
+
+    border-radius:30px;
+}
+
+.mini-stats{
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.mini-stats h3{
+
+    font-size:34px;
+
+    color:var(--pine-teal);
+}
+
+.mini-stats p{
+
+    font-size:14px;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}

@@ -1,0 +1,84 @@
+:root {
+  --frosted-mint: #d8f3dc;
+  --celadon: #b7e4c7;
+  --celadon-2: #95d5b2;
+  --mint-leaf: #74c69d;
+  --mint-leaf-2: #52b788;
+  --sea-green: #40916c;
+  --dark-emerald: #2d6a4f;
+  --pine-teal: #1b4332;
+  --evergreen: #081c15;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root {
+
+  width: 100%;
+  min-height: 100%;
+
+}
+
+
+body {
+
+  background: var(--frosted-mint);
+
+  color: var(--evergreen);
+
+  font-family: "Inter", sans-serif;
+
+  overflow-x: hidden;
+
+}
+
+
+/* головне полотно */
+
+.app {
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      var(--celadon),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at bottom right,
+      var(--mint-leaf),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      135deg,
+      var(--frosted-mint),
+      var(--celadon)
+    );
+
+}
+
+
+/* легкий ефект скла */
+
+.glass {
+
+  background: rgba(255,255,255,0.35);
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+}

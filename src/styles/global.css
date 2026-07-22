@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--frosted-mint);
+  color: var(--evergreen);
+}
+
+section {
+  padding: 80px 10%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
