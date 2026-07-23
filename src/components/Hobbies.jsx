@@ -1,35 +1,43 @@
 import "../styles/Hobbies.css";
 
+// import img from "../assets/happy-teen.jpg";
+import art from "../assets/hobbies-photos/art.jpg";
+import tech from "../assets/hobbies-photos/tech.jpg";
+import music from "../assets/hobbies-photos/music.jpg";
+import sport from "../assets/hobbies-photos/sport.jpg";
+// import science from "../assets/hobbies-photos/science.jpg";
+import leadership from "../assets/hobbies-photos/leadership.jpg";
+import film from "../assets/hobbies-photos/film.jpg";
 const hobbies = [
   {
-    icon: "🎨",
+    image: art,
     title: "Creative Arts",
     description: "Drawing, Design, Photography, Animation",
   },
   {
-    icon: "💻",
+    image: tech,
     title: "Technology",
     description: "Programming, AI, Robotics, Game Development",
   },
   {
-    icon: "🎵",
+    image: music,
     title: "Music",
     description: "Singing, Instruments, Music Production",
   },
   {
-    icon: "⚽",
+    image: sport,
     title: "Sports",
     description: "Football, Basketball, Swimming, Fitness",
   },
   {
-    icon: "🧪",
-    title: "Science",
-    description: "Biology, Chemistry, Physics, Astronomy",
-  },
-  {
-    icon: "🎭",
+    image: leadership,
     title: "Leadership",
     description: "Psychology, Communication, Public Speaking",
+  },
+  {
+    image: film,
+    title: "Filmmaking",
+    description: "Directing, Cinematography, Video Editing, Storytelling",
   },
 ];
 
@@ -74,12 +82,20 @@ export default function Hobbies() {
 
       <div className="hobby-grid">
         {hobbies.map((item) => (
-          <div className="hobby-card" key={item.title}>
-            <div className="hobby-icon">{item.icon}</div>
+          <div
+            className="hobby-card"
+            key={item.title}
+            style={{
+              backgroundImage: `url(${item.image})`,
+            }}
+          >
+            <div className="hobby-overlay"></div>
 
-            <h3>{item.title}</h3>
+            <div className="hobby-content">
+              <h3>{item.title}</h3>
 
-            <p>{item.description}</p>
+              <p>{item.description}</p>
+            </div>
           </div>
         ))}
       </div>

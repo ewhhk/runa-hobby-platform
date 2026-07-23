@@ -1,339 +1,210 @@
 .floating-area {
+  position: relative;
 
-    position: relative;
+  width: 420px;
 
-    width: 420px;
-
-    height: 500px;
-
+  height: 500px;
 }
-
-
 
 /* головна картка */
 
 .profile-card {
+  position: absolute;
 
-    position: absolute;
+  top: 50px;
 
-    top: 50px;
+  left: 60px;
 
-    left: 60px;
+  width: 300px;
 
+  background: rgba(255, 255, 255, 0.65);
 
-    width: 300px;
+  backdrop-filter: blur(20px);
 
+  border-radius: 35px;
 
-    background: rgba(255,255,255,0.65);
+  padding: 15px;
 
-    backdrop-filter: blur(20px);
+  box-shadow: 0 30px 70px rgba(27, 67, 50, 0.18);
 
-
-    border-radius: 35px;
-
-
-    padding: 15px;
-
-
-    box-shadow:
-    0 30px 70px rgba(27,67,50,0.18);
-
-
-    animation: levitate 5s ease-in-out infinite;
-
+  animation: levitate 5s ease-in-out infinite;
 }
-
-
 
 .profile-card img {
+  width: 100%;
 
+  height: 300px;
 
-    width:100%;
+  object-fit: cover;
 
-    height:300px;
-
-
-    object-fit:cover;
-
-
-    border-radius:25px;
-
+  border-radius: 25px;
 }
-
-
-
 
 .profile-info {
-
-    padding:15px 10px;
-
+  padding: 15px 10px;
 }
-
-
 
 .profile-info h3 {
+  color: var(--pine-teal);
 
-    color:var(--pine-teal);
-
-    font-size:20px;
-
+  font-size: 20px;
 }
-
 
 .profile-info p {
+  color: var(--sea-green);
 
-    color:var(--sea-green);
-
-    font-size:14px;
-
+  font-size: 14px;
 }
-
-
 
 .match {
+  margin-top: 12px;
 
+  display: inline-block;
 
-    margin-top:12px;
+  padding: 8px 16px;
 
+  border-radius: 30px;
 
-    display:inline-block;
+  background: var(--celadon);
 
+  color: var(--dark-emerald);
 
-    padding:8px 16px;
-
-
-    border-radius:30px;
-
-
-    background:var(--celadon);
-
-
-    color:var(--dark-emerald);
-
-
-    font-size:13px;
-
+  font-size: 13px;
 }
-
-
 
 /* маленькі плаваючі елементи */
 
-
 .floating-item {
+  position: absolute;
 
+  width: 60px;
 
-    position:absolute;
+  height: 60px;
 
+  display: flex;
 
-    width:60px;
+  align-items: center;
 
-    height:60px;
+  justify-content: center;
 
+  background: white;
 
-    display:flex;
+  border-radius: 20px;
 
-    align-items:center;
+  font-size: 28px;
 
-    justify-content:center;
-
-
-    background:white;
-
-
-    border-radius:20px;
-
-
-    font-size:28px;
-
-
-    box-shadow:
-    0 15px 35px rgba(27,67,50,0.15);
-
-
+  box-shadow: 0 15px 35px rgba(27, 67, 50, 0.15);
 }
-
-
 
 .item-one {
+  top: 40px;
 
-    top:40px;
+  left: 10px;
 
-    left:10px;
-
-
-    animation: float1 4s infinite;
-
+  animation: float1 4s infinite;
 }
-
-
 
 .item-two {
+  top: 160px;
 
-    top:160px;
+  right: 20px;
 
-    right:20px;
-
-
-    animation: float2 5s infinite;
-
+  animation: float2 5s infinite;
 }
-
-
 
 .item-three {
+  bottom: 100px;
 
-    bottom:100px;
+  left: 20px;
 
-    left:20px;
-
-
-    animation: float1 6s infinite;
-
+  animation: float1 6s infinite;
 }
-
-
 
 .item-four {
-    /* z-index: ; */
+  /* z-index: ; */
 
-    bottom:40px;
+  bottom: 40px;
 
-    right:50px;
+  right: 50px;
 
-
-    animation: float2 4s infinite;
-
+  animation: float2 4s infinite;
 }
-
-
 
 /* маленька нижня картка */
 
-
 .small-card {
+  z-index: 20;
+  position: absolute;
 
-    z-index: 20;
-    position:absolute;
+  bottom: 30px;
 
+  right: -20px;
 
-    bottom:30px;
+  display: flex;
 
-    right:-20px;
+  gap: 12px;
 
+  align-items: center;
 
-    display:flex;
+  padding: 15px 20px;
 
+  background: white;
 
-    gap:12px;
+  border-radius: 20px;
 
-
-    align-items:center;
-
-
-    padding:15px 20px;
-
-
-    background:white;
-
-
-    border-radius:20px;
-
-
-    box-shadow:
-    0 20px 40px rgba(27,67,50,.15);
-
-
+  box-shadow: 0 20px 40px rgba(27, 67, 50, 0.15);
 }
-
-
 
 .small-card span {
-    /* z-index:; */
-    font-size:25px;
-
+  /* z-index:; */
+  font-size: 25px;
 }
-
-
 
 .small-card strong {
+  color: var(--pine-teal);
 
-    color:var(--pine-teal);
-
-    font-size:14px;
-
+  font-size: 14px;
 }
-
 
 .small-card p {
+  margin: 0;
 
-    margin:0;
+  font-size: 12px;
 
-    font-size:12px;
-
-    color:var(--sea-green);
-
+  color: var(--sea-green);
 }
-
-
 
 /* анімації */
 
-
 @keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-
-    0%,100% {
-
-        transform:translateY(0);
-
-    }
-
-
-    50% {
-
-        transform:translateY(-18px);
-
-    }
-
+  50% {
+    transform: translateY(-18px);
+  }
 }
-
-
 
 @keyframes float1 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-
-    0%,100% {
-
-        transform:translateY(0);
-
-    }
-
-
-    50% {
-
-        transform:translateY(-15px);
-
-    }
-
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
-
-
 @keyframes float2 {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 
-
-    0%,100% {
-
-        transform:translateY(0) rotate(0deg);
-
-    }
-
-
-    50% {
-
-        transform:translateY(-20px) rotate(8deg);
-
-    }
-
+  50% {
+    transform: translateY(-20px) rotate(8deg);
+  }
 }

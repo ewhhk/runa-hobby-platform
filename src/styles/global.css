@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
   font-family: "Inter", sans-serif;
   background: var(--frosted-mint);
   color: var(--evergreen);
@@ -17,4 +23,8 @@ section {
 button {
   border: none;
   cursor: pointer;
+}
+
+#root {
+  width: 100%;
 }
