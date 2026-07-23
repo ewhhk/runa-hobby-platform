@@ -164,7 +164,7 @@
 }
 
 .mini-stats{
-
+    /* padding: ; */
     display:flex;
     justify-content:space-between;
 }

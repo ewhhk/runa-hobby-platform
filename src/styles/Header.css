@@ -4,16 +4,17 @@
   left: 0.5%;
   border-radius: 14px;
 
-  height: 75px;
+  height: 45px;
 
   display: flex;
   align-items: center;
 
   padding: 0 8%;
 
-  background: var(--frosted-mint);
 
-  border-bottom: 1px solid rgba(27,67,50,0.12);
+  background: rgba(216,243,220,0.85);
+
+  border-bottom: 1px solid rgba(45,106,79,0.18);
 
   position: sticky;
   top: 1%;
@@ -23,20 +24,27 @@
 }
 
 
+
 /* Логотип */
 
 .logo {
+
     display: flex;
+
     width: 100px;
-    /* align-content: center; */
+
 }
 
+
+
 .logo img{
+
     width: 100px;
 
-    height: 70px;
+    height: 40px;
 
     object-fit: contain;
+
 }
 
 
@@ -56,13 +64,16 @@ nav {
 }
 
 
+
 nav a {
 
   position: relative;
 
   text-decoration: none;
 
-  color: var(--dark-emerald);
+
+  color: var(--forest-ink);
+
 
   font-size: 15px;
 
@@ -75,11 +86,15 @@ nav a {
 }
 
 
+
 nav a:hover {
 
-  color: var(--mint-leaf-2);
+
+  color: var(--glaucous);
+
 
 }
+
 
 
 /* маленька анімація */
@@ -94,11 +109,14 @@ nav a::after {
 
   left:50%;
 
+
   width:0;
 
   height:1px;
 
-  background:var(--mint-leaf-2);
+
+  background:var(--dark-emerald);
+
 
   transform:translateX(-50%);
 
@@ -107,11 +125,13 @@ nav a::after {
 }
 
 
+
 nav a:hover::after {
 
   width:100%;
 
 }
+
 
 
 /* пустий блок справа для балансу */

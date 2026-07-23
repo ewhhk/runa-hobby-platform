@@ -8,6 +8,8 @@ import sport from "../assets/hobbies-photos/sport.jpg";
 // import science from "../assets/hobbies-photos/science.jpg";
 import leadership from "../assets/hobbies-photos/leadership.jpg";
 import film from "../assets/hobbies-photos/film.jpg";
+
+import mentor_student from "../assets/advantages/mentor-with-student.jpg"
 const hobbies = [
   {
     image: art,
@@ -43,7 +45,7 @@ const hobbies = [
 
 const advantages = [
   {
-    icon: "🎯",
+    icon: mentor_student,
     title: "Personalized Approach",
     text: "Every teenager receives recommendations based on their personality, interests, and goals.",
   },
@@ -103,7 +105,7 @@ export default function Hobbies() {
       <div className="advantages">
         {advantages.map((item) => (
           <div className="adv-card" key={item.title}>
-            <div className="adv-icon">{item.icon}</div>
+            <div className="adv-icon"><img src={item.icon} alt="img" /></div>
 
             <div>
               <h3>{item.title}</h3>
