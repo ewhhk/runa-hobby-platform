@@ -298,3 +298,341 @@
     transform: translateY(0);
   }
 }
+
+/* =========================
+   MOBILE ADAPTATION
+========================= */
+
+@media(max-width:900px){
+
+.how {
+
+  width:90%;
+
+  margin:100px auto;
+
+  flex-direction:column;
+
+  gap:50px;
+
+  align-items:flex-start;
+
+}
+
+
+.how-left {
+
+  width:100%;
+
+}
+
+
+
+.how-left h2 {
+
+  font-size:38px;
+
+  line-height:1.2;
+
+}
+
+
+
+.how-left p {
+
+  font-size:16px;
+
+  line-height:1.7;
+
+  margin-bottom:30px;
+
+}
+
+
+
+.journey-btn {
+
+  padding:14px 28px;
+
+  border-radius:14px;
+
+}
+
+
+
+/* CARD */
+
+.journey-card {
+
+  width:100%;
+
+  padding:30px;
+
+  border-radius:25px;
+
+}
+
+
+
+.journey-title {
+
+  font-size:20px;
+
+  margin-bottom:30px;
+
+}
+
+
+
+/* TIMELINE */
+
+.timeline {
+
+  padding-left:10px;
+
+}
+
+
+
+.progress-track {
+
+  left:25px;
+
+  width:3px;
+
+  height:calc(100% - 80px);
+
+}
+
+
+
+.timeline-item {
+
+  gap:18px;
+
+  margin-bottom:30px;
+
+}
+
+
+
+.circle {
+
+  width:34px;
+
+  height:34px;
+
+  min-width:34px;
+
+  font-size:14px;
+
+}
+
+
+
+.timeline-content h3 {
+
+  font-size:17px;
+
+}
+
+
+
+.timeline-content p {
+
+  font-size:14px;
+
+  line-height:1.5;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.how {
+
+  width:92%;
+
+  margin:80px auto;
+
+  gap:40px;
+
+}
+
+
+
+/* заголовок */
+
+
+.section-tag {
+
+  font-size:12px;
+
+}
+
+
+
+.how-left h2 {
+
+  font-size:32px;
+
+  margin:15px 0;
+
+}
+
+
+
+.how-left p {
+
+  font-size:15px;
+
+}
+
+
+
+/* кнопка */
+
+.journey-btn {
+
+  width:100%;
+
+  padding:15px;
+
+}
+
+
+
+/* картка */
+
+
+.journey-card {
+
+  padding:22px;
+
+  border-radius:22px;
+
+}
+
+
+
+.journey-title {
+
+  font-size:18px;
+
+}
+
+
+
+/* лінія */
+
+
+.timeline {
+
+  padding-left:5px;
+
+}
+
+
+
+.progress-track {
+
+  left:21px;
+
+}
+
+
+
+/* кроки */
+
+
+.timeline-item {
+
+  gap:15px;
+
+  margin-bottom:25px;
+
+}
+
+
+
+.circle {
+
+  width:30px;
+
+  height:30px;
+
+  min-width:30px;
+
+  border-width:2px;
+
+}
+
+
+
+.timeline-content {
+
+  transform:none;
+
+}
+
+
+
+.timeline-content h3 {
+
+  font-size:16px;
+
+  margin-bottom:5px;
+
+}
+
+
+
+.timeline-content p {
+
+  font-size:13px;
+
+}
+
+
+
+/* Finish */
+
+
+.finish {
+
+  gap:10px;
+
+}
+
+
+
+.finish:first-letter {
+
+  font-size:28px;
+
+}
+
+
+
+.finish h3 {
+
+  font-size:18px;
+
+}
+
+
+.finish p {
+
+  font-size:13px;
+
+}
+
+
+}

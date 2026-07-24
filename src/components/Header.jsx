@@ -1,19 +1,39 @@
+import { useState } from "react";
 import "../styles/Header.css";
 import img from "../assets/runa.png";
-export default function Header() {
-    return (
-      <header className="header">
-        <div className="logo">
-          <img src={img} alt="img" />
-        </div>
 
-        <nav>
-          <a href="#about">About</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#schedule">Schedule</a>
-          <a href="#contacts">Contacts</a>
-        </nav>
-        
-      </header>
-    );
+export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="header">
+      <div className="logo">
+        <img src={img} alt="logo" />
+      </div>
+
+      <button
+        className={`menu-toggle ${open ? "active" : ""}`}
+        onClick={() => setOpen(!open)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav className={open ? "open" : ""}>
+        <a href="#about" onClick={() => setOpen(false)}>
+          About
+        </a>
+        <a href="#hobbies" onClick={() => setOpen(false)}>
+          Hobbies
+        </a>
+        <a href="#schedule" onClick={() => setOpen(false)}>
+          Schedule
+        </a>
+        <a href="#contacts" onClick={() => setOpen(false)}>
+          Contacts
+        </a>
+      </nav>
+    </header>
+  );
 }

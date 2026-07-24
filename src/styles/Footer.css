@@ -219,3 +219,229 @@
 
 
 }
+
+/* =========================
+   FOOTER TABLET
+========================= */
+
+@media(max-width:900px){
+
+.footer{
+
+    padding:70px 6% 30px;
+
+    margin-top:90px;
+
+}
+
+
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+
+
+.footer-brand h2{
+
+    font-size:36px;
+
+}
+
+
+
+.footer-brand p{
+
+    max-width:300px;
+
+}
+
+
+
+.footer h3{
+
+    font-size:17px;
+
+}
+
+
+
+.footer-bottom{
+
+    margin-top:45px;
+
+}
+
+}
+
+
+
+/* =========================
+   FOOTER MOBILE
+========================= */
+
+@media(max-width:600px){
+
+
+.footer{
+
+    padding:55px 7% 25px;
+
+    margin-top:70px;
+
+    border-radius:30px 30px 0 0;
+
+}
+
+
+
+/* одна колонка */
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+
+
+.footer-brand h2{
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.footer-brand p{
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+.footer h3{
+
+    font-size:16px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* посилання */
+
+.footer-links{
+
+    gap:10px;
+
+}
+
+
+
+.footer a{
+
+    font-size:15px;
+
+}
+
+
+
+/* контакти */
+
+.footer-contact p{
+
+    font-size:14px;
+
+}
+
+
+
+/* соцмережі */
+
+.socials{
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.socials a{
+
+    padding:8px 12px;
+
+}
+
+
+
+/* нижня частина */
+
+.footer-bottom{
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    text-align:center;
+
+    font-size:13px;
+
+}
+
+
+}
+
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:380px){
+
+
+.footer{
+
+    padding-left:5%;
+
+    padding-right:5%;
+
+}
+
+
+
+.footer-brand h2{
+
+    font-size:28px;
+
+}
+
+
+
+.footer-bottom{
+
+    font-size:12px;
+
+}
+
+
+}

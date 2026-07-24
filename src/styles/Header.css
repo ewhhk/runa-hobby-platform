@@ -280,3 +280,185 @@ nav{
 
 
 }
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    width:35px;
+
+    height:30px;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+
+
+.menu-toggle span{
+
+    height:2px;
+
+    width:100%;
+
+    background:var(--dark-emerald);
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:900px){
+
+
+.header{
+
+    justify-content:space-between;
+
+}
+
+
+
+.menu-toggle{
+
+    display:flex;
+
+}
+
+
+
+/* меню */
+
+nav{
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:25px;
+
+
+    padding:30px 0;
+
+
+    background:rgba(216,243,220,.95);
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    opacity:0;
+
+    pointer-events:none;
+
+
+    transform:translateY(-20px);
+
+
+    transition:.3s;
+
+}
+
+
+
+
+nav.open{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    transform:translateY(0);
+
+}
+
+
+
+nav a{
+
+    font-size:17px;
+
+    color:var(--forest-ink);
+
+}
+
+
+
+
+/* анімація кнопки */
+
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:translateY(14px) rotate(45deg);
+
+}
+
+
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:translateY(-14px) rotate(-45deg);
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+nav{
+
+    top:70px;
+
+}
+
+
+
+}
