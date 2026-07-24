@@ -192,3 +192,296 @@
     }
 
 }
+
+/* =========================
+   MOBILE ADAPTATION
+========================= */
+
+
+@media(max-width:900px){
+
+
+.about{
+
+    width:90%;
+
+    margin:90px auto;
+
+    flex-direction:column;
+
+    gap:50px;
+
+    text-align:left;
+
+}
+
+
+
+/* LEFT CONTENT */
+
+
+.about-left{
+
+    width:100%;
+
+}
+
+
+
+.section-label{
+
+    font-size:12px;
+
+}
+
+
+
+.about h2{
+
+    font-size:38px;
+
+    line-height:1.2;
+
+}
+
+
+
+.about p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+
+
+/* FEATURES */
+
+
+.about-features{
+
+    margin-top:35px;
+
+    gap:22px;
+
+}
+
+
+
+.feature{
+
+    gap:15px;
+
+    align-items:flex-start;
+
+}
+
+
+
+.feature-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:16px;
+
+    font-size:22px;
+
+}
+
+
+
+.feature h4{
+
+    font-size:17px;
+
+}
+
+
+
+.feature p{
+
+    font-size:14px;
+
+}
+
+
+
+/* RIGHT CARD */
+
+
+.about-right{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+
+
+.about-card{
+
+    width:100%;
+
+    max-width:360px;
+
+    padding:30px;
+
+    border-radius:28px;
+
+}
+
+
+
+.quote{
+
+    font-size:21px;
+
+}
+
+
+
+/* PROGRESS */
+
+
+.progress{
+
+    margin:30px 0;
+
+}
+
+
+
+.progress-bar{
+
+    height:9px;
+
+}
+
+
+
+/* STATS */
+
+
+.mini-stats{
+
+    gap:20px;
+
+}
+
+
+
+.mini-stats h3{
+
+    font-size:30px;
+
+}
+
+
+
+.mini-stats p{
+
+    font-size:13px;
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:500px){
+
+
+
+.about{
+
+    margin:70px auto;
+
+}
+
+
+
+.about h2{
+
+    font-size:32px;
+
+}
+
+
+
+.about p{
+
+    font-size:15px;
+
+}
+
+
+
+/* features stack */
+
+.feature{
+
+    align-items:center;
+
+}
+
+
+
+.feature-icon{
+
+    width:45px;
+
+    height:45px;
+
+    flex-shrink:0;
+
+}
+
+
+
+/* card */
+
+.about-card{
+
+    padding:25px;
+
+}
+
+
+
+.quote{
+
+    font-size:19px;
+
+}
+
+
+
+.mini-stats{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+
+
+.mini-stats div{
+
+    padding:10px;
+
+}
+
+
+
+}

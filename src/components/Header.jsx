@@ -13,6 +13,7 @@ export default function Header() {
           <a href="#schedule">Schedule</a>
           <a href="#contacts">Contacts</a>
         </nav>
+        
       </header>
     );
 }

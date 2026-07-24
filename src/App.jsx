@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero";
 import Hobbies from "./components/Hobbies";
 import HowItWorks from "./components/HowItWorks";
+import MentorCTA from "./components/MentorCTA";
 import Mentors from "./components/Mentors";
 import Partners from "./components/Partners";
 import PersonalityTest from "./components/PersonalityTest";
@@ -17,6 +18,7 @@ function App() {
       <Hero/>
       <About/>
       <Hobbies/>
+      <MentorCTA/>
       <HowItWorks/>
       <Schedule/>
       <PersonalityTest/>
