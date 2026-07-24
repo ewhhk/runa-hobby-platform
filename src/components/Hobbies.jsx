@@ -10,6 +10,9 @@ import leadership from "../assets/hobbies-photos/leadership.jpg";
 import film from "../assets/hobbies-photos/film.jpg";
 
 import mentor_student from "../assets/advantages/mentor-with-student.jpg"
+import career_mentors_online_student from "../assets/advantages/career-mentors-online-student.jpg";
+import School_Visits from "../assets/advantages/School-Visits.jpg";
+import Growth_Together from "../assets/advantages/Growth-Together.jpg";
 const hobbies = [
   {
     image: art,
@@ -50,17 +53,17 @@ const advantages = [
     text: "Every teenager receives recommendations based on their personality, interests, and goals.",
   },
   {
-    icon: "👨‍🏫",
+    icon: career_mentors_online_student,
     title: "Experienced Mentors",
     text: "Our lecturers are carefully selected professionals who guide and inspire every student.",
   },
   {
-    icon: "🏫",
+    icon: School_Visits,
     title: "School Visits",
     text: "Several times a week we visit schools, organize workshops, and create hobby groups.",
   },
   {
-    icon: "🌱",
+    icon: Growth_Together,
     title: "Growth Together",
     text: "Students learn in small supportive groups where they build skills and confidence.",
   },
@@ -107,7 +110,7 @@ export default function Hobbies() {
           <div className="adv-card" key={item.title}>
             <div className="adv-icon"><img src={item.icon} alt="img" /></div>
 
-            <div>
+            <div className="adv-text-content">
               <h3>{item.title}</h3>
 
               <p>{item.text}</p>

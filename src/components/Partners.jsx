@@ -1,42 +1,41 @@
 import "../styles/Partners.css"
 
 
-
 const partners = [
   {
-    icon: "🇸🇰",
-    title: "Ministry of Education",
-    text: "Supporting innovation in youth education and personal development.",
+    icon: "🏛️",
+    title: "EduFuture Slovakia Foundation",
+    text: "A private educational foundation supporting innovative learning projects, youth development programs, and equal access to modern education opportunities across Slovakia.",
   },
 
   {
-    icon: "🏫",
-    title: "Slovak School Network",
-    text: "Connecting schools with modern hobby-based learning programs.",
+    icon: "💡",
+    title: "Danube Innovation Fund",
+    text: "An investment initiative focused on supporting young talent, technology projects, and educational platforms that prepare students for future careers.",
   },
 
   {
     icon: "🎓",
-    title: "University Innovation Hub",
-    text: "Creating opportunities between students, mentors and future careers.",
+    title: "Central Europe Education Partners",
+    text: "A network of education supporters connecting schools, mentors, universities, and organizations to create new opportunities for teenagers.",
   },
 
   {
     icon: "🎵",
-    title: "Lukas Varga — Magic Music Studio",
-    text: "Slovak singer and music producer supporting young talents through creativity, vocal training and music workshops.",
-  },
-
-  {
-    icon: "🌱",
-    title: "Youth Development Center",
-    text: "Helping teenagers discover talents and build confidence.",
+    title: "Magic Music Academy",
+    text: "A creative partner supporting young musicians through professional workshops, vocal training, music production sessions, and artistic development programs.",
   },
 
   {
     icon: "🚀",
-    title: "Startup Slovakia Community",
-    text: "Inspiring young people to explore entrepreneurship and innovation.",
+    title: "Future Skills Ventures",
+    text: "An early-stage investment group helping youth-focused projects grow through mentorship, strategic guidance, and innovation support.",
+  },
+
+  {
+    icon: "🌱",
+    title: "Youth Growth Initiative",
+    text: "A social development organization focused on discovering teenagers' talents, building confidence, and creating pathways for personal growth.",
   },
 ];
 
